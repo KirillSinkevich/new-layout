@@ -13,14 +13,24 @@
 @import "blocks/header.less";
 @import "blocks/footer.less";
 @import "blocks/main.less";
-
-
-
-
+@import "blocks/l-auth.less";
+@import "blocks/l-studio.less";
 
 /* example
 @import "blocks/banner.less"; 
 */
+/* @font-face {
+	font-family: Lays;
+	src: url("fonts/Lays-Bold.otf") format("opentype");
+	font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+	font-family: Lays;
+	src: url("fonts/Lays-Medium.otf") format("opentype");
+	font-style: normal;
+    font-weight: 500;
+} */
 body {
 	height: 100%;
 	margin: 0;
@@ -30,4 +40,10 @@ body {
 main {
 	height: 100%;
 	display: flex;
+}
+* {
+	font-family: Lays;
+}
+.is-no-active {
+	display: none;
 }

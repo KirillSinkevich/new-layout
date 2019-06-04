@@ -1,0 +1,137 @@
+.l-auth {
+	&__container {
+		position: relative;
+		z-index: 15;
+	}
+	&__title {
+		display: flex;
+		justify-content: center;
+		margin-top: 60px;
+		img {
+			max-height: 25vh;
+			max-width: 100%;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 70px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 23vw;
+		margin: 0 90px;
+	}
+	&__text {
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 60px;
+		color: #83201a;
+	}
+}
+@media screen and (max-height:  768px ) and (max-width: 1250px) {
+	.l-auth {
+		&__title {
+			margin-top: 50px;
+		}
+		&__content {
+			margin-top: 70px;
+		}
+		&__item {
+			width: 25vw;
+			margin: 0 45px;
+		}
+		&__text {
+			font-size: 18px;
+			padding-top: 40px;
+		}
+	}
+}
+@media screen and (min-height:  768px ) and (max-width: 1090px) {
+	.l-auth {
+		&__title {
+			margin-top: 50px;
+		}
+		&__item {
+			margin: 0 45px;
+		}
+		&__text {
+			font-size: 18px;
+			padding-top: 40px;
+		}
+	}
+}
+@media screen and (max-height: 600px) and (max-width: 768px) {
+	.l-auth {
+		&__title {
+			margin-top: 40px;
+			img {
+				max-height: 22vh;
+			}
+		}
+		&__content {
+			margin-top: 50px;
+		}
+		&__item {
+			margin: 0 30px;
+		}
+		&__text {
+			font-size: 14px;
+			padding-top: 30px;
+		}
+	}
+}
+@media screen and (max-height: 470px) and (max-width: 600px) {
+	.l-auth {
+		&__content {
+			margin-top: 40px;
+		}
+		&__text {
+			font-size: 14px;
+			padding-top: 20px;
+		}
+	}
+}
+@media screen and (max-height:  300px) and (max-width: 425px) {
+	.l-auth {
+		&__title {
+			margin-top: 20px;
+			img {
+				max-height: 20vh;
+			}
+		}
+		&__content {
+			margin-top: 30px;
+		}
+		&__item {
+			margin: 0 15px;
+		}
+		&__text {
+			font-size: 8px;
+			padding-top: 10px;
+		}
+	}
+}
+@media screen and (max-height: 240px) and (max-width: 320px) {
+	.l-auth {
+		&__title {
+			margin-top: 20px;
+		}
+		&__content {
+			margin-top: 20px;
+		}
+		&__item {
+			margin: 0 15px;
+		}
+		&__text {
+			font-size: 7px;
+			padding-top: 10px;
+		}
+	}
+}

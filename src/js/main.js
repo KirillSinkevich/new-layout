@@ -1,4 +1,13 @@
 $(document).ready(() => {
+	$(".single-item").slick({
+		arrows:false,
+		infinite: true,
+		dots: false,
+		fade:false,
+		adaptiveHeight:true,
+		speed: 1000,
+		initialSlide: 0
+	});
 	console.log('ready');
 	var iScreenMain = document.querySelector('.l-screen--main');
 	var iContPosition = document.querySelector('.l-cont--position');
@@ -24,7 +33,7 @@ $(document).ready(() => {
 		var iScreenMainHeight = iScreenMain.clientHeight;
 		var iScreenMainWidth = iScreenMain.clientWidth;
 		var wRatio = iScreenMainWidth / iScreenMainHeight;
-		console.log('wRatio', wRatio);
+		//console.log('wRatio', wRatio);
 		posBlock.style.marginTop = (iScreenMainHeight * 0.245) + 'px';
 		
 		if (wRatio >= 1.71 && wRatio <= 1.79) {
