@@ -4,7 +4,7 @@ $(document).ready(() => {
 		infinite: true,
 		dots: false,
 		fade:false,
-		adaptiveHeight:true,
+		adaptiveHeight:false,
 		speed: 1000,
 		initialSlide: 0
 	});

@@ -66,20 +66,23 @@
 			span {
 			}
 		}
+		&--l-studio {
+			margin-left: 0;
+			font-weight: 700;
+		}
 	}
 	&__block {
 		position: relative;
 		display: flex;
 		flex-grow: 1;
 		max-width: 1423px;
+		width: 100%;
 	   	margin: 0 auto;
 	   	z-index: 10;
 		.l-screen {
 		    background-size: cover;
 		    background-repeat: no-repeat;
 	  		background-position: center center;
-	    	height: 100%;
-	    	width: 100%;
 	  		z-index: 10;
 		    &--main {
 		    	background-image: url(../images/main.png);
@@ -87,7 +90,18 @@
 		    }
 		    &--studio-hiphop {
 		    	background-image: url(../images/bg-hiphop.png);
-		    	flex-grow: 1;
+		    }
+		    &--studio-rock {
+		    	background-image: url(../images/bg-rock.png);
+		    }
+		    &--studio-jazz {
+		    	background-image: url(../images/bg-jazz.png);
+		    }
+		    &--studio-pop {
+		    	background-image: url(../images/bg-pop.png);
+		    }
+		    &--studio-latina {
+		    	background-image: url(../images/bg-latina.png);
 		    }
 		    .l-cont--position {
 		    	position: absolute;
