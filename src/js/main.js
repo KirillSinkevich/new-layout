@@ -29,6 +29,10 @@ $(document).ready(() => {
 	resizeBtn(imgHeight, iScreenMainHeight);
 	posBlock.style.marginTop = (iScreenMainHeight * 0.245) + 'px';
 	
+	$(".l-awards__wrap-content").mCustomScrollbar({
+		scrollInertia: 500,
+		autoHideScrollbar: true,
+	});
 	$(window).resize(() => {
 		var iScreenMainHeight = iScreenMain.clientHeight;
 		var iScreenMainWidth = iScreenMain.clientWidth;

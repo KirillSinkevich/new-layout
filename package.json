@@ -11,6 +11,7 @@
   "author": "uniquite.com",
   "license": "ISC",
   "dependencies": {
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
