@@ -40,10 +40,10 @@
 		box-shadow: 0px 0px 150px 27px rgba(85, 0, 0, 0.5);
 		z-index: 8;
 	}
-	.i-btn {
+	.l-btn {
 		width: 100%;
 		height: 100%;
-		margin-left: -47%;
+		//margin-left: -47%;
 		border-radius: 50px;
 		border: solid;
 		border-width: 0 1px 5px;
@@ -53,11 +53,9 @@
 		font-weight: 700;
 		font-size: 30px;
 		color: white;
-		/* border-color: #dc2925;
-		background-image: linear-gradient(to top, #c9201d, #d22d29, #db3934, #e44440, #ed4f4b);
-		-webkit-box-shadow: inset 0px -5px 10px 0px rgba(168,23,21,1);
-		-moz-box-shadow: inset 0px -5px 10px 0px rgba(168,23,21,1);
-		box-shadow: inset 0px -5px 10px 0px rgba(168,23,21,1); */
+		&--l-main {
+			margin-left: -47%;
+		}
 		&--l-auth {
 			height: 15vh;
 			margin-left: 0;
@@ -66,14 +64,6 @@
 		&--l-studio {
 			margin-left: 0;
 			width: 13.8vw;
-			//background-image: none;
-			/* color: #f42923;
-			border-color: rgba(228,120,33,1);
-			background-color: #eeb636;
-			box-shadow: none;
-			-webkit-box-shadow: inset 0px -5px 10px 0px rgba(226,150,46,1);
-			-moz-box-shadow: inset 0px -5px 10px 0px rgba(226,150,46,1);
-			box-shadow: inset 0px -5px 10px 0px rgba(226,150,46,1); */
 		}
 		&--l-rules {
 			margin-left: 0;
@@ -96,6 +86,9 @@
 			-moz-box-shadow: inset 0px -5px 10px 0px rgba(226,150,46,1);
 			box-shadow: inset 0px -5px 10px 0px rgba(226,150,46,1);
 		}
+		&--coins {
+			border-radius: 0 50px 50px 0;
+		}
 	}
 	&__block {
 		position: relative;
@@ -110,6 +103,7 @@
 		    background-repeat: no-repeat;
 	  		background-position: center center;
 	  		z-index: 10;
+	  		height: 100%;
 		    &--main {
 		    	background-image: url(../images/main.png);
 		    	flex-grow: 1;
@@ -218,7 +212,7 @@
 				&__title {
 					display: flex;
 					justify-content: center;
-					margin: 25px 0 100px;
+					margin: 50px 0;
 					font-size: 60px;
 					font-weight: 700;
 					color: #db1808;
@@ -237,7 +231,7 @@
 }
 @media screen and (max-height:  1000px ) and (max-width: 1250px) {
 	.wrapper {
-		.i-btn {
+		.l-btn {
 			&--l-auth {
 				font-size: 24px;
 			}
@@ -246,7 +240,7 @@
 }
 @media screen and (max-height:  768px ) and (max-width: 1250px) {
 	.wrapper {
-		.i-btn {
+		.l-btn {
 			&--l-auth {
 				font-size: 18px;
 			}
@@ -272,8 +266,8 @@
 			    		}
 			    	}
 			    	&__title {
-						margin: 25px 0 80px;
-						font-size: 50px;
+						//margin: 25px 0;
+						font-size: 40px;
 					}
 			    }
 			}
@@ -282,7 +276,7 @@
 }
 @media screen and (min-height:  768px ) and (max-width: 1090px) {
 	.wrapper {
-		.i-btn {
+		.l-btn {
 			&--l-auth {
 				font-size: 18px;
 			}
@@ -291,7 +285,7 @@
 }
 @media screen and (max-height: 600px) and (max-width: 768px) {
 	.wrapper {
-		.i-btn {
+		.l-btn {
 			&--l-auth {
 				font-size: 14px;
 			}
@@ -302,35 +296,10 @@
 				font-size: 20px;
 			}
 		}
-	}
-}
-@media screen and (max-height: 470px) and (max-width: 600px) {
-	.wrapper {
-		.i-btn {
-			&--l-auth {
-				font-size: 12px;
-			}
-			&--l-studio {
-				width: 18vw;
-				font-size: 12px;
-			}
-		}
-	}
-}
-@media screen and (max-height:  300px) and (max-width: 425px) {
-	.wrapper {
-		.i-btn {
-			&--l-auth {
-				font-size: 8px;
-			}
-			&--l-studio {
-				font-size: 11px;
-			}
-		}
 		&__block {
 			.l-screen {
 			    .l-popup {
-					&__block {
+			    	&__block {
 				    	.circle1 {
 				    		top: 15px;
 				    		left: 35px;
@@ -344,14 +313,43 @@
 				    		height: 25px;
 			    		}
 			    	}
+			    	&__title {
+						margin: 25px 0;
+						font-size: 40px;
+					}
 			    }
+			}
+		}
+	}
+}
+@media screen and (max-height: 470px) and (max-width: 600px) {
+	.wrapper {
+		.l-btn {
+			&--l-auth {
+				font-size: 12px;
+			}
+			&--l-studio {
+				width: 18vw;
+				font-size: 12px;
+			}
+		}
+	}
+}
+@media screen and (max-height:  300px) and (max-width: 425px) {
+	.wrapper {
+		.l-btn {
+			&--l-auth {
+				font-size: 8px;
+			}
+			&--l-studio {
+				font-size: 11px;
 			}
 		}
 	}
 }
 @media screen and (max-height:  240px) and (max-width: 320px) {
 	.wrapper {
-		.i-btn {
+		.l-btn {
 			&--l-auth {
 				font-size: 7px;
 			}
@@ -359,11 +357,21 @@
 				font-size: 9px;
 			}
 		}
+		&__block {
+			.l-screen {
+			    .l-popup {
+			    	&__title {
+						margin: 15px 0;
+						font-size: 20px;
+					}
+			    }
+			}
+		}
 	}
 }
 @media screen and (max-width: 375px) {
 	.wrapper {
-		.i-btn {
+		.l-btn {
 			&--l-studio {
 				font-size: 9px;
 			}
@@ -372,7 +380,7 @@
 }
 @media screen and (max-width: 320px) {
 	.wrapper {
-		.i-btn {
+		.l-btn {
 			&--l-studio {
 				font-size: 7px;
 			}
@@ -384,7 +392,7 @@
 		.l-screen {
 			.l-cont--position {
 				.pos-block {
-			    	.i-btn {
+			    	.l-btn {
 			    		font-size: 17px;
 			    	}
 				}

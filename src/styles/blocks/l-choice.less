@@ -1,0 +1,119 @@
+.l-choice {
+	width: 100%;
+	img {
+		height: 100%;
+    	width: auto;
+	}
+	&__btn {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		&-topleft{
+			position: absolute;
+			top: 60px;
+			left: 45px;
+		}
+		&-topright{
+			position: absolute;
+			top: 60px;
+			right: 45px;
+		}
+		&-bottomleft{
+			position: absolute;
+			bottom: 65px;
+			left: 0;
+		}
+		&-bottomcenter{
+			position: absolute;
+			transform: translateX(-50%);
+			bottom: 30px;
+			left: 50%;
+		}
+		&-bottomright{
+			position: absolute;
+			bottom: 65px;
+			right: 45px;
+		}
+		&-wrap-red {
+			height: 9.3vh;
+			width: 15.6vw;
+		}
+		&-wrap-yellow {
+			height: 8vh;
+			width: 13.8vw;
+		}
+	}
+	&__items {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		&-size {
+			position: absolute;
+			width: 287px;
+			height: 258px;	
+			top: 50%;
+			left: 50%;
+		}
+		&-recorder {
+			transform: translate(40%, -50%);
+		}
+		&-ball {
+			transform: translate(40%, -5%);
+		}
+		&-guitar {
+			transform: translate(-140%, -40%) scale(-1, 1);
+		}
+		&-mic {
+			transform: translate(-100%, -10%);
+		}
+		&-dj {
+			transform: translate(-155%, -20%);
+		}
+	}
+}
+body {
+	.l-srudio {
+		display: block;
+	}
+	.page1 {
+		
+	}
+	.page2 {
+		
+	}
+}
+
+
+
+
+.x-page1,
+.x-page2 {
+	display: none;
+}
+
+body.page1 .x-page1 {
+	display: block;
+}
+
+body.page2 .x-page2 {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
